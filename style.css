@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 4rem;
+}
+.nav-content ul {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+}
+nav a{
+    text-decoration: none;
+    color: hsl(236, 13%, 42%);
+}
+
+nav a:hover{
+    color: hsl(5, 85%, 63%);
+}
