@@ -66,4 +66,15 @@
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
+<script>
+
+  const toggle = document.querySelector(".toggle-button");
+  const nav = document.querySelector(".nav-content");
+  toggle.addEventListener('click', function () {
+
+    nav.classList.toggle("active");
+    toggle.classList.toggle("active");
+
+  })
+</script>
 </html>

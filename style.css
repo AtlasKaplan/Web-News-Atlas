@@ -21,7 +21,7 @@ nav {
 }
 nav a{
     text-decoration: none;
-    color: hsl(236, 13%, 42%);
+    color: hsl(240, 100%, 5%);
 }
 
 nav a:hover{
@@ -48,7 +48,7 @@ nav a:hover{
 }
 
 .toggle-button.active .bar:nth-child(1) {
-    transform: translateY(17px) rotate(45deg);
+    transform: translateY(10px) rotate(45deg);
     transition: 0.5s;
 }
 
@@ -65,8 +65,22 @@ nav a:hover{
 
 
 @media (max-width:37.5rem) {
-    .nav-content{
-        display: none;
+    .nav-content ul{
+        display: flex;
+        flex-direction: column;
+        padding: 175px 0 0 30px;
+        height: 100vh;
+        width: 60%;
+        background-color: white;
+        font-weight: 400;
+        position: absolute;
+        right:-500px;
+        top: 0;
+        transition: 0.5s;
+        font-size: 1.25rem;
+    }
+    .nav-content.active ul {
+        right: 0;
     }
     .toggle-button{
         display: flex;
