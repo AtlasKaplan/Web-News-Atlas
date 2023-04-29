@@ -225,7 +225,7 @@ footer a{
 @media (max-width:37.5rem) {
     /* //////////////////NAV/////////////////////// */
     .nav-content ul{
-        display: flex;
+        
         flex-direction: column;
         padding: 175px 0 0 30px;
         height: 100vh;
@@ -233,13 +233,23 @@ footer a{
         background-color: white;
         font-weight: 400;
         position: absolute;
-        right:-500px;
+        right:0px;
         top: 0;
         transition: 0.5s;
         font-size: 1.25rem;
+        transform: scale(0,1);
+        transform-origin: right;
+    }
+    nav ul a {
+        opacity: 0;
+        transition: opacity 100ms ease-in-out;
     }
     .nav-content.active ul {
-        right: 0;
+        transform: scale(1,1);
+    }
+    .nav-content.active ul a{
+        opacity: 1;
+        transition: opacity 250ms ease-in-out 250ms;
     }
     .toggle-button{
         display: flex;
