@@ -30,6 +30,9 @@
       <span class="bar"> </span>
     </a>
   </nav>
+  <div class="menu-focus">
+    
+  </div>
 
   <main>
 
@@ -130,10 +133,12 @@
 
   const toggle = document.querySelector(".toggle-button");
   const nav = document.querySelector(".nav-content");
+  const opacity = document.querySelector(".menu-focus")
   toggle.addEventListener('click', function () {
 
     nav.classList.toggle("active");
     toggle.classList.toggle("active");
+    opacity.classList.toggle("active");
 
   })
 

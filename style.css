@@ -41,6 +41,7 @@ nav a:hover{
     justify-content: space-between;
     width: 50px;
     height: 22.5px;
+    z-index: 15;
 }
 
 .toggle-button .bar {
@@ -67,6 +68,15 @@ nav a:hover{
     transform: translateY(-10px) rotate(-45deg);
 }   
 
+.menu-focus.active{
+    height: 100%;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    background-color: black;
+    opacity: .75;
+}
 
 
 
@@ -239,6 +249,7 @@ footer a{
         font-size: 1.25rem;
         transform: scale(0,1);
         transform-origin: right;
+        z-index: 10;
     }
     nav ul a {
         opacity: 0;
